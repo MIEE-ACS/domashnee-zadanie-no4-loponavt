@@ -7,10 +7,10 @@ namespace Homework_4
         static void Main()
         {
             Console.WriteLine("Введите размер массива: ");
-            int N = 0;
-            while (!int.TryParse(Console.ReadLine(), out N))
+            ushort N = 0;
+            while (!ushort.TryParse(Console.ReadLine(), out N))
             {
-                Console.WriteLine("Ошибка ввода. Введите целое число");
+                Console.WriteLine("Ошибка ввода. Введите целое, неотрицательное число: ");
             }
             double[] array = new double[N];
             Random rnd = new Random();

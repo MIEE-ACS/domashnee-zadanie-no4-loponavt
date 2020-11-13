@@ -8,16 +8,16 @@ namespace Homework_4_2
         static void Main(string[] args)
         {
             Console.WriteLine("Введите количество строк матрицы: ");
-            int N = 0;
-            while (!int.TryParse(Console.ReadLine(), out N))
+            ushort N = 0;
+            while (!ushort.TryParse(Console.ReadLine(), out N))
             {
-                Console.WriteLine("Ошибка ввода. Введите целое число");
+                Console.WriteLine("Ошибка ввода. Введите целое, неотрицательное число");
             }
             Console.WriteLine("Введите количество столбцов матрицы: ");
-            int M = 0;
-            while (!int.TryParse(Console.ReadLine(), out M))
+            ushort M = 0;
+            while (!ushort.TryParse(Console.ReadLine(), out M))
             {
-                Console.WriteLine("Ошибка ввода. Введите целое число");
+                Console.WriteLine("Ошибка ввода. Введите целое, неотрицательное число");
             }
             int[,] array = new int[N, M];
             Random rnd = new Random();
